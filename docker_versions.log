@@ -1,7 +1,10 @@
 -------------------------------
-v. 20220810
+v. 20220819
 
-Install CMake on Ubuntu
+Download compiled version of Paraview
+
+List of Python packages added:
+- cairosvg
 
 -------------------------------
 v. 20220729

@@ -13,3 +13,4 @@ reportlab
 openpyxl
 papermill
 pyevtk
+cairosvg
