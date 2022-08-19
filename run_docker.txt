@@ -1,0 +1,35 @@
+docker build --no-cache -t gnasello/commbini-env:latest .
+docker build --no-cache -t gnasello/commbini-env:20220810 .
+docker build -t gnasello/commbini-env:latest .
+docker images
+docker rmi imageID -f
+
+
+docker run -it --rm  \
+                -p 7777:7777 \
+                --volume $HOME:/home/host_home \
+                --workdir /home/host_home \
+                gnasello/commbini-env:latest
+
+docker run -it --rm  \
+                --volume $HOME:/home/host_home \
+                --workdir /home/host_home \
+                gnasello/commbini-env:20220809
+
+chmod -R 777 ./
+
+docker run -it --rm  \
+                -u $(id -u):$(id -g) \
+                -p 7777:7777 \
+                --volume $HOME:/home/host_home \
+                --workdir /home/host_home \
+                gnasello/commbini-env:latest
+
+$(id -u):$(id -g)
+
+WARNING: You are running this container as root, which can cause new files in
+mounted volumes to be created as the root user on your host machine.
+
+To avoid this, run the container by specifying your user's userid:
+
+$ docker run -u $(id -u):$(id -g) args...

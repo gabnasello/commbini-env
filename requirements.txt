@@ -1,0 +1,15 @@
+jupyterlab
+jupyter_contrib_nbextensions
+lckr-jupyterlab-variableinspector
+pillow
+python-bioformats
+aicsimageio
+matplotlib-scalebar
+svgwrite
+seaborn
+pyvista
+svglib
+reportlab
+openpyxl
+papermill
+pyevtk
