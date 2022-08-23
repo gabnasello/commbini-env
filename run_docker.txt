@@ -1,5 +1,5 @@
 docker build --no-cache -t gnasello/commbini-env:latest .
-docker build --no-cache -t gnasello/commbini-env:20220810 .
+docker build --no-cache -t gnasello/commbini-env:20220819 .
 docker build -t gnasello/commbini-env:latest .
 docker images
 docker rmi imageID -f

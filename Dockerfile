@@ -53,7 +53,7 @@ RUN echo "alias jl='export SHELL=/bin/bash; jupyter lab --allow-root --port=7777
 
 RUN pip freeze > ../package_versions_py.txt
 
-# RUN git clone https://github.com/edoborgiani/PhysiCell_COMMBINI.git
+RUN git clone https://github.com/edoborgiani/PhysiCell_COMMBINI.git
 
 # Download and install paraview
 
